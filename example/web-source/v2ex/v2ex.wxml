@@ -1,6 +1,8 @@
 <view class="page">
     <view class="page__bd">
         <view class="weui-tab">
+
+
             <view class="weui-navbar">
                 <block wx:for="{{tabs}}" wx:key="*this">
                     <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
@@ -9,19 +11,30 @@
                 </block>
                 <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
             </view>
+
             <view class="weui-tab__panel">
 
-
-{{/*                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">*/}}
+{{/*--------------------------------------------------------------------------------------------*/}}
                     <view class="weui-panel" hidden="{{activeIndex != 0}}" >
 
-                        <view class="weui-panel__hd">V2EX-最热主题</view>
+                        <view class="weui-panel__hd">
+                            V2EX-最热主题
+                        </view>
 
                         <view class="weui-panel__bd">
                             <view class="weui-media-box weui-media-box_text">
-                                <view class="weui-media-box__title weui-media-box__title_in-text">实现了半财务自由，分享一下我的收入来源和一些想法</view>
+                                <view class="weui-media-box__title weui-media-box__title_in-text">AirPods 真没有各路自媒体吹的那么好，顺带求替代品</view>
                                 <view class="weui-media-box__desc">
-                                    jamfer: 先说说现状吧，目前 33 岁，中度抑郁症患者，没有自己的公司，长期在准二线城市生活（目前在帝都打工），从 2013 年资产归零从头开始（结婚+装修+买车，花光了所有积蓄），到 2019 年实现了自己财务自由目标的一半（暂且叫半财务自由吧）。目前每个月收入大约 70k 左右，具体如下：
+                                    fengeliangn:
+                                    夏天来了，手持的 qc35 太热，最近入手 AirPods 一个月，来吐槽下
+
+                                    1.最不能忍：不能同时连接多个设备，连了手机就不能连电脑，连电脑就得断开手机。这跟有线耳机拔来插去有什么区别？
+
+                                    2.播放卡顿，时不时就卡，在 Mac 上经常卡到没声音
+
+                                    3.主打的唤醒 Siri，声音大到要靠喊。不过这功能当前也是鸡肋。
+
+                                    请问有相对好一些的替代方案吗？
                                 </view>
                                 <view class="weui-media-box__info">
                                     <view class="weui-media-box__info__meta">文字来源</view>
@@ -39,11 +52,38 @@
                         </view>
 
                     </view>
-{{/*                </view>*/}}
 
-                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
-                    hoho
+
+{{/*--------------------------------------------------------------------------------------------*/}}
+                <view class="weui-panel" hidden="{{activeIndex != 1}}" >
+
+                    <view class="weui-panel__hd">
+                        V2EX-最新主题
+                    </view>
+
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text">
+                            <view class="weui-media-box__title weui-media-box__title_in-text">实现了半财务自由，分享一下我的收入来源和一些想法</view>
+                            <view class="weui-media-box__desc">
+                                jamfer: 先说说现状吧，目前 33 岁，中度抑郁症患者，没有自己的公司，长期在准二线城市生活（目前在帝都打工），从 2013 年资产归零从头开始（结婚+装修+买车，花光了所有积蓄），到 2019 年实现了自己财务自由目标的一半（暂且叫半财务自由吧）。目前每个月收入大约 70k 左右，具体如下：
+                            </view>
+                            <view class="weui-media-box__info">
+                                <view class="weui-media-box__info__meta">文字来源</view>
+                                <view class="weui-media-box__info__meta">时间</view>
+                                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+                            </view>
+                        </view>
+                    </view>
+
+                    <view class="weui-panel__ft">
+                        <view class="weui-cell weui-cell_access weui-cell_link">
+                            <view class="weui-cell__bd">查看更多</view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </view>
+                    </view>
                 </view>
+{{/*--------------------------------------------------------------------------------------------*/}}
+
 
 
             </view>
