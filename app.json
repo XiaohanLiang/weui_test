@@ -1,6 +1,7 @@
 {
   "pages": [
     "example/index",
+    "example/web-source/v2ex/v2ex",
     "example/button/button",
     "example/list/list",
     "example/input/input",
