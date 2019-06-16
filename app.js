@@ -9,6 +9,8 @@ App({
         console.log('App Hide')
     },
     globalData: {
-        hasLogin: false
+        hasLogin: false,
+        server: `116.196.120.218`,
+        port: `100`,
     }
 });
