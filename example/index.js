@@ -2,35 +2,16 @@ Page({
     data: {
         list: [
             {
-                id: 'form',
-                name: '表单',
+                id: 'prog',
+                name: '编程',
                 open: false,
-                pages: ['button', 'list', 'input', 'slider', 'uploader']
+                pages:  [
+                    {
+                        name:"V2EX",
+                        link:"v2ex",
+                    },
+                ]
             },
-            {
-                id: 'widget',
-                name: '基础组件',
-                open: false,
-                pages: ['article', 'badge', 'flex', 'footer', 'gallery', 'grid', 'icons', 'loadmore', 'panel', 'preview', 'progress']
-            },
-            {
-                id: 'feedback',
-                name: '操作反馈',
-                open: false,
-                pages: ['actionsheet', 'dialog', 'msg', 'picker', 'toast']
-            },
-            {
-                id: 'nav',
-                name: '导航相关',
-                open: false,
-                pages: ['navbar', 'tabbar']
-            },
-            {
-                id: 'search',
-                name: '搜索相关',
-                open: false,
-                pages: ['searchbar']
-            }
         ]
     },
     kindToggle: function (e) {
@@ -47,3 +28,4 @@ Page({
         });
     }
 });
+
