@@ -10,18 +10,6 @@ Page({
                         name:"V2EX",
                         link:"web-source/v2ex/v2ex",
                     },
-                    {
-                        name:"panel preview",
-                        link:"panel/panel",
-                    },
-                    {
-                        name:"step",
-                        link:"panel/panel",
-                    },
-                    {
-                        name:"single",
-                        link:"panel/panel_single",
-                    },
                 ]
             },
         ]

@@ -10,3 +10,6 @@ page,
     padding-top: 60px;
     text-align: center;
 }
+.weui-navbar{
+    background-color:#F8F8F8;
+}

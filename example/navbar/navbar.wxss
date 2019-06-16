@@ -8,5 +8,5 @@ page,
 }
 .weui-tab__content{
     padding-top: 60px;
-    text-align: left;
+    text-align: center;
 }

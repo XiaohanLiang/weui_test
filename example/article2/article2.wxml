@@ -1,0 +1,26 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">{{title}}</view>
+        <view class="page__desc">{{author}}</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        {{content}}
+                    </view>
+                </view>
+                <view class="page__desc">{{date}}</view>
+
+                <view class="weui-article__p"></view>
+
+                <view style='color:mediumblue' id="tapTest" data-hi="{{link}}" bindtap="goWebPage"> 查看完整版 </view>
+
+            </view>
+        </view>
+    </view>
+</view>
